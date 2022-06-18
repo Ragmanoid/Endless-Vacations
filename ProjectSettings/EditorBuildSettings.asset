@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 10eff87329ecd2948a44d26b909b8839
+  - enabled: 1
     path: Assets/Scenes/Floor.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Room_Boy.unity
     guid: 6fdd665bc5f01a24790bf9ca38386a2e
+  - enabled: 1
+    path: Assets/Scenes/Toilet.unity
+    guid: a660a5afe72d71d4bbf416dcd4a860bc
+  - enabled: 1
+    path: Assets/Scenes/Holl.unity
+    guid: eed8075db300a3744900ebf0cea333bd
   m_configObjects: {}

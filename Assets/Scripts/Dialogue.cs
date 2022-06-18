@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Dialogue
+
+public class Sentence
 {
     public string name;
-    [TextArea(3, 10)]
-    public string[] sentences;
+    public string text;
+}
+
+public class Dialogue
+{
+    public Sentence[] Sentences;
 }

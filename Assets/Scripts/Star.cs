@@ -30,16 +30,16 @@ public class Star : MonoBehaviour
         if (MoveDirection > 0)
         {
             SpriteRenderer.flipX = false;
-            // AnimatorComponent.SetInteger("state", 1);
+            AnimatorComponent.SetBool("IsMoving", true);
         }
         else if (MoveDirection < 0)
         {
             SpriteRenderer.flipX = true;
-            // AnimatorComponent.SetInteger("state", 1);
+            AnimatorComponent.SetBool("IsMoving", true);
         }
         else
         {
-            // AnimatorComponent.SetInteger("state", 0);
+            AnimatorComponent.SetBool("IsMoving", false);
         }
 
         RigidBody.velocity = new Vector2(MoveDirection * Speed, RigidBody.velocity.y);

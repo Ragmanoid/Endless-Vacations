@@ -22,12 +22,44 @@ public class GMRoomBoy : MonoBehaviour
                     SceneManager.LoadScene("Floor");
                     break;
                 case "Тумба":
+                    
                     Gm.Dm.StartDialogue(new Dialogue
                     {
-                        name = "Стар",
-                        sentences = new[]
+                        Sentences = new[]
                         {
-                            "О, а это похоже моя тумба"
+                            new Sentence
+                            {
+                                name = "Стар",
+                                text = "О, а это похоже моя тумба"
+                            }
+                        }
+                    });
+                    break;
+                case "Бейн":
+                    Gm.Dm.StartDialogue(new Dialogue
+                    {
+                        Sentences = new[]
+                        {
+                            new Sentence
+                            {
+                                name = "Стар",
+                                text = "Привет! Меня зовут Стар."
+                            },
+                            new Sentence
+                            {
+                                name = "Бейн",
+                                text = "Хелоу! Я Бейн."
+                            },
+                            new Sentence
+                            {
+                                name = "Бейн",
+                                text = "И ты меня бесишь. ВОН ОТ СЮДОГОГА!"
+                            },
+                            new Sentence
+                            {
+                                name = "Стар",
+                                text = "Ну ладно..."
+                            }
                         }
                     });
                     break;
